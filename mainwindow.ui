@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>743</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGraphicsView" name="Iv"/>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="OfBt">
+        <property name="text">
+         <string>打开文件</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="RestBt">
+        <property name="text">
+         <string>重置</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="LBt">
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="RBt">
+        <property name="text">
+         <string>&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>743</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>灰度变换</string>
+    </property>
+    <addaction name="actionhuiduzhuanhuan"/>
+    <addaction name="actionyansefanzhuan"/>
+    <addaction name="actionduishubianhuan"/>
+    <addaction name="actionhistagram"/>
+    <addaction name="actionhuidutujunheng"/>
+    <addaction name="actionHSVhist"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>空间滤波</string>
+    </property>
+    <addaction name="actionjuanji"/>
+    <addaction name="actiongaosilvbohuidu"/>
+    <addaction name="actiongaosimohu"/>
+    <addaction name="actionzhongzhilvbohuidu"/>
+    <addaction name="actionzhongzhilvbo"/>
+    <addaction name="actionshaungbianmohu"/>
+    <addaction name="actionpengzhang"/>
+    <addaction name="actionfushi"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actiondakai"/>
+    <addaction name="actionsave"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>频域变换</string>
+    </property>
+    <addaction name="actionpinyutu"/>
+    <addaction name="actionpinyutur"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>仿射变换</string>
+    </property>
+    <addaction name="actionshurujuzhen"/>
+    <addaction name="actionxuanzhuan"/>
+    <addaction name="actionsuofang"/>
+    <addaction name="actionxieqie"/>
+   </widget>
+   <addaction name="menu_3"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionhuiduzhuanhuan">
+   <property name="text">
+    <string>灰度转换</string>
+   </property>
+  </action>
+  <action name="actionyansefanzhuan">
+   <property name="text">
+    <string>颜色反转</string>
+   </property>
+  </action>
+  <action name="actionduishubianhuan">
+   <property name="text">
+    <string>对数变换</string>
+   </property>
+  </action>
+  <action name="actionhistagram">
+   <property name="text">
+    <string>彩色RGB直方图均衡</string>
+   </property>
+  </action>
+  <action name="actionhuidutujunheng">
+   <property name="text">
+    <string>灰度图均衡</string>
+   </property>
+  </action>
+  <action name="actionHSVhist">
+   <property name="text">
+    <string>HSI直方图均衡</string>
+   </property>
+  </action>
+  <action name="actionjuanji">
+   <property name="text">
+    <string>任意滤波器卷积</string>
+   </property>
+  </action>
+  <action name="actiongaosimohu">
+   <property name="text">
+    <string>高斯滤波（rgb）</string>
+   </property>
+  </action>
+  <action name="actionshaungbianmohu">
+   <property name="text">
+    <string>双边滤波</string>
+   </property>
+  </action>
+  <action name="actionpengzhang">
+   <property name="text">
+    <string>膨胀</string>
+   </property>
+  </action>
+  <action name="actionfushi">
+   <property name="text">
+    <string>腐蚀</string>
+   </property>
+  </action>
+  <action name="actionzhongzhilvbo">
+   <property name="text">
+    <string>中值滤波（rgb）</string>
+   </property>
+  </action>
+  <action name="actiongaosilvbohuidu">
+   <property name="text">
+    <string>高斯滤波（灰度）</string>
+   </property>
+  </action>
+  <action name="actionzhongzhilvbohuidu">
+   <property name="text">
+    <string>中值滤波（灰度）</string>
+   </property>
+  </action>
+  <action name="actiondakai">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="actionpinyutu">
+   <property name="text">
+    <string>频域图(灰)</string>
+   </property>
+  </action>
+  <action name="actionpinyutur">
+   <property name="text">
+    <string>频域图（RGB）</string>
+   </property>
+  </action>
+  <action name="actionshurujuzhen">
+   <property name="text">
+    <string>平移矩阵</string>
+   </property>
+  </action>
+  <action name="actionxuanzhuan">
+   <property name="text">
+    <string>旋转矩阵</string>
+   </property>
+  </action>
+  <action name="actionsuofang">
+   <property name="text">
+    <string>缩放矩阵</string>
+   </property>
+  </action>
+  <action name="actionxieqie">
+   <property name="text">
+    <string>斜切矩阵</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
